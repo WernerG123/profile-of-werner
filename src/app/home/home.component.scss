@@ -42,6 +42,8 @@
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
     overflow-y: auto;
+    border: 2px solid whitesmoke;
+    // box-shadow: 4px 4px 2px 1px whitesmoke;
 
   }
 
@@ -96,13 +98,65 @@
     flex-direction: column;
     align-items: start;
     justify-content: space-evenly;
+    font-family: 'Custom 1';
   }
 
   .title {
-    font-size: 3rem;
+    font-size: 6rem;
     margin: 1rem;
   }
   .subtitle {
-    font-size: 2rem;
-    margin: 1rem;
+    font-size: 5rem;
+    margin: 2rem;
   }
+  .sub-detail {
+    font-size: 3rem;
+    margin: 2rem;
+  }
+
+  a:visited {
+    color: white;
+  }
+
+  a {
+    margin-left: 2rem;
+    color: white;
+  }
+
+  a:hover {
+    color: blue;
+  }
+
+
+  @keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+  mat-card {
+    animation: fadein 350ms;
+  }
+
+  .parent-container {
+    background-image: url('../../assets/backdrop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    // font-family: url('../../assets//lt_sonoma/LT\ Sonoma\ 2\ \(1\).otf');
+    // font-family: custom2;
+    // font-size: xx-large;
+ 
+  }
+
+//   @font-face {
+//     font-family: 'custom1';
+//     src: url('./assets/lt_sonoma/LTSonoma2.otf');
+// }
+
+// @font-face {
+//     font-family: 'custom2';
+//     src: url('../../assets/rolling_stright/Rolling Stright.otf');
+// }
